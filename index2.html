@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shiv Shakti Gifts - Stationery, Gifts & Custom Creations</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      color: #333;
+      background: #fff;
+    }
+    h1, h2, h3 {
+      font-family: 'Poppins', sans-serif;
+      color: #FF7F50;
+      margin: 0 0 10px;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Buttons */
+    .btn {
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+    .btn-primary {
+      background: #2ECC71;
+      color: white;
+    }
+    .btn-primary:hover {
+      background: #27ae60;
+    }
+    .btn-secondary {
+      background: #FF7F50;
+      color: white;
+    }
+    .btn-secondary:hover {
+      background: #e76b3c;
+    }
+
+    /* Header */
+    header {
+      background: #f9f9f9;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #b8860b;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+    nav a:hover {
+      color: #2ECC71;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url('hero1.png');
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+
+    /* Categories */
+    .categories {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .category-card {
+      flex: 1 1 250px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+      padding: 20px;
+      transition: box-shadow 0.3s;
+    }
+    .category-card:hover {
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .category-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    /* About Section */
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+    }
+    .about img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 8px;
+    }
+    .about-text {
+      flex: 1;
+    }
+
+    /* Gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Testimonials */
+    .testimonials {
+      background: #fff8e1;
+      border-radius: 8px;
+      text-align: center;
+      padding: 30px;
+    }
+    .testimonial-slide {
+      display: none;
+    }
+    .testimonial-slide.active {
+      display: block;
+    }
+    .testimonial-rating {
+      color: #f39c12;
+    }
+
+    /* Contact Section */
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .contact iframe {
+      border: 0;
+      width: 100%;
+      height: 300px;
+    }
+
+    /* Footer */
+    footer {
+      background: #2C3E50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+    footer a {
+      color: #FF7F50;
+      margin: 0 10px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Shiv Shakti Gifts</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <!-- <a href="#gallery">Gallery</a> -->
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="https://wa.me/7990915286" class="btn btn-primary">
+      <i class="fab fa-whatsapp"></i> WhatsApp Order
+    </a>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <h1>Your One-Stop Shop for Stationery, Gifts & Custom Creations</h1>
+    <p>Serving Vadodara with quality gifts and stationery at the best prices.</p>
+    <a href="#products" class="btn btn-secondary">View Products</a>
+    <a href="https://wa.me/7990915286" class="btn btn-primary">Order Now</a>
+  </section>
+
+  <!-- Categories -->
+  <section >
+    <h2 class="section-title">Explore Our Collections</h2>
+    <div class="categories">
+      <div class="category-card">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d3abf12e-645a-4700-a2b8-424edbdbb204.png" alt="Stationery Products">
+        <h3>Stationery</h3>
+        <p>Pens, Notebooks, Art Supplies</p>
+      </div>
+      <div class="category-card">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f8ef578e-0c5f-4df2-b8a8-5e3e3f01203e.png" alt="Birthday Decor">
+        <h3>Birthday Decoration</h3>
+        <p>Balloons, Party Items</p>
+      </div>
+      <div class="category-card">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/186148eb-ace4-4f06-a632-7849d4a142d3.png" alt="Custom Gifts">
+        <h3>Custom Gifts</h3>
+        <p>Mugs, T-shirts, Photo Frames</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about">
+    <div class="about">
+      <img src="hero.png" alt="Our Shop">
+      <div class="about-text">
+        <h2>About Shiv Shakti Gifts</h2>
+        <p>We are a trusted gift and stationery shop located at Waghodia Road, Vadodara. With over 1,000+ happy customers and a wide variety of products, we make your celebrations and daily needs extra special.</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="products">
+    <h2 class="section-title">Our Creations & Products</h2>
+    <div class="gallery">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5e854397-b75d-4cae-8b73-b68a235799cd.png" alt="Customized Mug">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/18aad724-0775-4bb2-9130-8f97cea39b02.png" alt="Custom T-shirt">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/50a23821-b169-4aca-8f58-eda40cf4961b.png" alt="Birthday Decoration">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/216a838d-b52d-4983-93e8-446af08d56b5.png" alt="Photo Frame">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/53ba2f85-e34c-4cf9-be3f-5a614201e8d2.png" alt="Stationery">
+      <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f8e8132e-12c8-42ac-9056-519d7f8fd4cf.png" alt="Custom Poster">
+    </div>
+    <div style="text-align:center; margin-top:20px;">
+      <a href="#" class="btn btn-primary">View Full Gallery</a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial-slide active">
+      <p>"Great variety of gifts and very reasonable prices!"</p>
+      <p class="testimonial-rating">★★★★★</p>
+    </div>
+    <div class="testimonial-slide">
+      <p>"Custom mugs were perfect for our office event."</p>
+      <p class="testimonial-rating">★★★★★</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18..." allowfullscreen></iframe>
+      <div>
+        <p><i class="fab fa-whatsapp" style="color:#2ECC71;"></i> WhatsApp: <a href="https://wa.me/7990915286">7990915286</a></p>
+        <p><i class="fas fa-phone" style="color:#2ECC71;"></i> Phone: 7990915286</p>
+        <p><i class="fas fa-map-marker-alt" style="color:#2ECC71;"></i> 08, Yogeshwar Shopping Complex, Opp. Vallabh School, Waghodia Road, Vadodara</p>
+        <p><strong>Opening Hours:</strong><br>
+           Mon: Closed<br>
+           Tue – Sun: 10:00 AM – 9:30 PM<br>
+           Lunch Break: 2:00 – 4:00 PM
+        </p>
+        <a href="https://wa.me/7990915286" class="btn btn-primary" style="display:block; text-align:center;">Order Now on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Shiv Shakti Gifts | Making Every Occasion Special</p>
+    <div>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/7990915286"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://maps.google.com"><i class="fas fa-map-marker-alt"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    // Simple testimonial carousel
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.testimonial-slide');
+
+    setInterval(() => {
+      slides[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + 1) % slides.length;
+      slides[currentIndex].classList.add('active');
+    }, 4000);
+  </script>
+</body>
+</html>
